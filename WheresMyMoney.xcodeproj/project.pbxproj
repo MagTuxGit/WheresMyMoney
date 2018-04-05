@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		872C2E7B207626660049277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E7A207626660049277E /* AppDelegate.swift */; };
-		872C2E7D207626660049277E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E7C207626660049277E /* ViewController.swift */; };
-		872C2E80207626660049277E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872C2E7E207626660049277E /* Main.storyboard */; };
 		872C2E83207626660049277E /* WheresMyMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */; };
 		872C2E85207626660049277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872C2E84207626660049277E /* Assets.xcassets */; };
 		872C2E88207626660049277E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872C2E86207626660049277E /* LaunchScreen.storyboard */; };
+		872C2E96207627870049277E /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E95207627870049277E /* UIAlertController.swift */; };
+		872C2E98207627A30049277E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E97207627A30049277E /* NibLoadable.swift */; };
+		872C2E9D207629FA0049277E /* WMMCurrencyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E9C207629FA0049277E /* WMMCurrencyDTO.swift */; };
+		872C2E9F20762A930049277E /* WMMCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E9E20762A930049277E /* WMMCurrency.swift */; };
+		872C2EA320762DF10049277E /* WMMDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EA220762DF10049277E /* WMMDataManager.swift */; };
+		872C2EA520762E2D0049277E /* WMMCurrencyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EA420762E2D0049277E /* WMMCurrencyDataManager.swift */; };
+		872C2EA720762EDC0049277E /* WMMCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EA620762EDC0049277E /* WMMCoreDataStack.swift */; };
+		872C2EAB207630A10049277E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EAA207630A10049277E /* Numbers.swift */; };
+		872C2EAD2076341B0049277E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EAC2076341B0049277E /* Constants.swift */; };
+		872C2EAF207634610049277E /* WMMAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EAE207634610049277E /* WMMAppDependencies.swift */; };
+		872C2EB1207635290049277E /* WMMRootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EB0207635290049277E /* WMMRootWireframe.swift */; };
+		872C2EB7207638460049277E /* WMMCurrencyListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EB6207638460049277E /* WMMCurrencyListWireframe.swift */; };
+		872C2EBA207638FD0049277E /* WMMCurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EB8207638FD0049277E /* WMMCurrencyListViewController.swift */; };
+		872C2EBB207638FD0049277E /* WMMCurrencyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872C2EB9207638FD0049277E /* WMMCurrencyListViewController.xib */; };
+		872C2EBD20763BAA0049277E /* WMMCurrencyListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EBC20763BAA0049277E /* WMMCurrencyListInteractor.swift */; };
+		872C2EBF207643D60049277E /* WMMCurrencyListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2EBE207643D60049277E /* WMMCurrencyListInteractorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		872C2E77207626650049277E /* WheresMyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresMyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872C2E7A207626660049277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		872C2E7C207626660049277E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		872C2E7F207626660049277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		872C2E82207626660049277E /* WheresMyMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheresMyMoney.xcdatamodel; sourceTree = "<group>"; };
 		872C2E84207626660049277E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		872C2E87207626660049277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		872C2E89207626660049277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		872C2E95207627870049277E /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		872C2E97207627A30049277E /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		872C2E9C207629FA0049277E /* WMMCurrencyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyDTO.swift; sourceTree = "<group>"; };
+		872C2E9E20762A930049277E /* WMMCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrency.swift; sourceTree = "<group>"; };
+		872C2EA220762DF10049277E /* WMMDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMDataManager.swift; sourceTree = "<group>"; };
+		872C2EA420762E2D0049277E /* WMMCurrencyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyDataManager.swift; sourceTree = "<group>"; };
+		872C2EA620762EDC0049277E /* WMMCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCoreDataStack.swift; sourceTree = "<group>"; };
+		872C2EAA207630A10049277E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		872C2EAC2076341B0049277E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		872C2EAE207634610049277E /* WMMAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMAppDependencies.swift; sourceTree = "<group>"; };
+		872C2EB0207635290049277E /* WMMRootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMRootWireframe.swift; sourceTree = "<group>"; };
+		872C2EB6207638460049277E /* WMMCurrencyListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyListWireframe.swift; sourceTree = "<group>"; };
+		872C2EB8207638FD0049277E /* WMMCurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyListViewController.swift; sourceTree = "<group>"; };
+		872C2EB9207638FD0049277E /* WMMCurrencyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMMCurrencyListViewController.xib; sourceTree = "<group>"; };
+		872C2EBC20763BAA0049277E /* WMMCurrencyListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyListInteractor.swift; sourceTree = "<group>"; };
+		872C2EBE207643D60049277E /* WMMCurrencyListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMCurrencyListInteractorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,133 @@
 		872C2E79207626650049277E /* WheresMyMoney */ = {
 			isa = PBXGroup;
 			children = (
-				872C2E7A207626660049277E /* AppDelegate.swift */,
-				872C2E7C207626660049277E /* ViewController.swift */,
-				872C2E7E207626660049277E /* Main.storyboard */,
-				872C2E84207626660049277E /* Assets.xcassets */,
-				872C2E86207626660049277E /* LaunchScreen.storyboard */,
-				872C2E89207626660049277E /* Info.plist */,
-				872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */,
+				872C2E93207627420049277E /* Common */,
+				872C2EB4207638080049277E /* Modules */,
+				872C2E91207626CD0049277E /* Resources */,
+				872C2E8F2076269F0049277E /* Supporting Files */,
 			);
 			path = WheresMyMoney;
+			sourceTree = "<group>";
+		};
+		872C2E8F2076269F0049277E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E89207626660049277E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		872C2E90207626AA0049277E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E86207626660049277E /* LaunchScreen.storyboard */,
+				872C2E7A207626660049277E /* AppDelegate.swift */,
+				872C2EAE207634610049277E /* WMMAppDependencies.swift */,
+				872C2EB0207635290049277E /* WMMRootWireframe.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		872C2E91207626CD0049277E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E84207626660049277E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		872C2E92207626D80049277E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E9A2076280B0049277E /* Entities */,
+				872C2E99207628050049277E /* CoreData */,
+				872C2E9B207628110049277E /* DataManager */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		872C2E93207627420049277E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EAC2076341B0049277E /* Constants.swift */,
+				872C2E90207626AA0049277E /* Application */,
+				872C2EA82076305A0049277E /* Extensions */,
+				872C2E92207626D80049277E /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		872C2E942076276C0049277E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E95207627870049277E /* UIAlertController.swift */,
+				872C2E97207627A30049277E /* NibLoadable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		872C2E99207628050049277E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EA620762EDC0049277E /* WMMCoreDataStack.swift */,
+				872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */,
+				872C2E9E20762A930049277E /* WMMCurrency.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		872C2E9A2076280B0049277E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				872C2E9C207629FA0049277E /* WMMCurrencyDTO.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		872C2E9B207628110049277E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EA220762DF10049277E /* WMMDataManager.swift */,
+				872C2EA420762E2D0049277E /* WMMCurrencyDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		872C2EA82076305A0049277E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EA9207630670049277E /* Common */,
+				872C2E942076276C0049277E /* View */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		872C2EA9207630670049277E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EAA207630A10049277E /* Numbers.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		872C2EB4207638080049277E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EB5207638190049277E /* CurrencyList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		872C2EB5207638190049277E /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				872C2EB8207638FD0049277E /* WMMCurrencyListViewController.swift */,
+				872C2EB9207638FD0049277E /* WMMCurrencyListViewController.xib */,
+				872C2EB6207638460049277E /* WMMCurrencyListWireframe.swift */,
+				872C2EBE207643D60049277E /* WMMCurrencyListInteractorProtocol.swift */,
+				872C2EBC20763BAA0049277E /* WMMCurrencyListInteractor.swift */,
+			);
+			path = CurrencyList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +274,7 @@
 			files = (
 				872C2E88207626660049277E /* LaunchScreen.storyboard in Resources */,
 				872C2E85207626660049277E /* Assets.xcassets in Resources */,
-				872C2E80207626660049277E /* Main.storyboard in Resources */,
+				872C2EBB207638FD0049277E /* WMMCurrencyListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,23 +285,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872C2E7D207626660049277E /* ViewController.swift in Sources */,
+				872C2EB1207635290049277E /* WMMRootWireframe.swift in Sources */,
+				872C2EAF207634610049277E /* WMMAppDependencies.swift in Sources */,
+				872C2EA520762E2D0049277E /* WMMCurrencyDataManager.swift in Sources */,
+				872C2EAD2076341B0049277E /* Constants.swift in Sources */,
 				872C2E83207626660049277E /* WheresMyMoney.xcdatamodeld in Sources */,
+				872C2EAB207630A10049277E /* Numbers.swift in Sources */,
+				872C2EBF207643D60049277E /* WMMCurrencyListInteractorProtocol.swift in Sources */,
+				872C2E98207627A30049277E /* NibLoadable.swift in Sources */,
+				872C2EA720762EDC0049277E /* WMMCoreDataStack.swift in Sources */,
+				872C2E9F20762A930049277E /* WMMCurrency.swift in Sources */,
+				872C2E9D207629FA0049277E /* WMMCurrencyDTO.swift in Sources */,
+				872C2E96207627870049277E /* UIAlertController.swift in Sources */,
 				872C2E7B207626660049277E /* AppDelegate.swift in Sources */,
+				872C2EA320762DF10049277E /* WMMDataManager.swift in Sources */,
+				872C2EBD20763BAA0049277E /* WMMCurrencyListInteractor.swift in Sources */,
+				872C2EB7207638460049277E /* WMMCurrencyListWireframe.swift in Sources */,
+				872C2EBA207638FD0049277E /* WMMCurrencyListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		872C2E7E207626660049277E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				872C2E7F207626660049277E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		872C2E86207626660049277E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59ECVJXP69;
-				INFOPLIST_FILE = WheresMyMoney/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WheresMyMoney/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onlinico.trand.WheresMyMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59ECVJXP69;
-				INFOPLIST_FILE = WheresMyMoney/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WheresMyMoney/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onlinico.trand.WheresMyMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
