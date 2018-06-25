@@ -15,11 +15,11 @@ class WMMCurrencyListInteractor: WMMCurrencyListInteractorProtocol {
     // Fake data for testing
     private var dataSource: [WMMCurrencyDTO] = {
         var currencies = [WMMCurrencyDTO]()
-        currencies.append(WMMCurrencyDTO(name: "US Dollar", code: "USD"))
-        currencies.append(WMMCurrencyDTO(name: "Euro", code: "EUR"))
-        currencies.append(WMMCurrencyDTO(name: "British Pound", code: "GBP"))
-        currencies.append(WMMCurrencyDTO(name: "Ukrainian Hryvnia", code: "UAH"))
-        currencies.append(WMMCurrencyDTO(name: "Russian Ruble", code: "RUB"))
+        currencies.append(WMMCurrencyDTO.usd)
+        currencies.append(WMMCurrencyDTO.eur)
+        currencies.append(WMMCurrencyDTO.gbp)
+        currencies.append(WMMCurrencyDTO.uah)
+        currencies.append(WMMCurrencyDTO.rub)
         return currencies
     }()
     

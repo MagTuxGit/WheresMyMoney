@@ -11,13 +11,14 @@ import UIKit
 class WMMRootWireframe {
     
     var navigationController = UINavigationController()
-    var currencyWireframe: WMMCurrencyListWireframe?
     
+    var mainListWireframe: WMMMainListWireframe?
+
     func installRootViewControllerIntoWindow(_ window: UIWindow) {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         
-        self.currencyWireframe?.presentCurrencyScreen()
+        self.mainListWireframe?.presentMainListScreen(isRoot: true)
     }
     
     func showRootViewController(_ viewController: UIViewController) {

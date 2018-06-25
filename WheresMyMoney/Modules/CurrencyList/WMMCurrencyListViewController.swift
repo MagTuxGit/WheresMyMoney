@@ -25,7 +25,6 @@ class WMMCurrencyListViewController: UIViewController, NibLoadable {
 
         // register cells
     }
-
 }
 
 extension WMMCurrencyListViewController: UITableViewDataSource {

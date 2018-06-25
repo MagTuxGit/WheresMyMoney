@@ -10,6 +10,18 @@
 		871D53DC20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */; };
 		871D53DE20E0FF980039CB84 /* WMMPaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DD20E0FF980039CB84 /* WMMPaymentMethod.swift */; };
 		871D53E020E1042D0039CB84 /* WMMDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DF20E1042D0039CB84 /* WMMDataManagerProtocol.swift */; };
+		871D53E520E10AF40039CB84 /* WMMMainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53E320E10AF40039CB84 /* WMMMainListViewController.swift */; };
+		871D53E620E10AF40039CB84 /* WMMMainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 871D53E420E10AF40039CB84 /* WMMMainListViewController.xib */; };
+		871D53E820E10C430039CB84 /* WMMMainListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53E720E10C430039CB84 /* WMMMainListWireframe.swift */; };
+		871D53EA20E10CFE0039CB84 /* WMMMainListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53E920E10CFE0039CB84 /* WMMMainListInteractorProtocol.swift */; };
+		871D53ED20E10D4B0039CB84 /* WMMMainListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53EC20E10D4B0039CB84 /* WMMMainListInteractor.swift */; };
+		871D53EF20E10DB50039CB84 /* WMMLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53EE20E10DB50039CB84 /* WMMLists.swift */; };
+		871D53F120E10EC30039CB84 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53F020E10EC30039CB84 /* CaseIterable.swift */; };
+		871D53F420E112FF0039CB84 /* WMMPaymentMethodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53F220E112FF0039CB84 /* WMMPaymentMethodListViewController.swift */; };
+		871D53F520E112FF0039CB84 /* WMMPaymentMethodListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 871D53F320E112FF0039CB84 /* WMMPaymentMethodListViewController.xib */; };
+		871D53F720E118EF0039CB84 /* WMMPaymentMethodListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53F620E118EF0039CB84 /* WMMPaymentMethodListWireframe.swift */; };
+		871D53F920E119A80039CB84 /* WMMPaymentMethodListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53F820E119A80039CB84 /* WMMPaymentMethodListInteractorProtocol.swift */; };
+		871D53FB20E119C90039CB84 /* WMMPaymentMethodListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53FA20E119C90039CB84 /* WMMPaymentMethodListInteractor.swift */; };
 		872C2E7B207626660049277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E7A207626660049277E /* AppDelegate.swift */; };
 		872C2E83207626660049277E /* WheresMyMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */; };
 		872C2E85207626660049277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872C2E84207626660049277E /* Assets.xcassets */; };
@@ -36,6 +48,18 @@
 		871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodDTO.swift; sourceTree = "<group>"; };
 		871D53DD20E0FF980039CB84 /* WMMPaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethod.swift; sourceTree = "<group>"; };
 		871D53DF20E1042D0039CB84 /* WMMDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMDataManagerProtocol.swift; sourceTree = "<group>"; };
+		871D53E320E10AF40039CB84 /* WMMMainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMMainListViewController.swift; sourceTree = "<group>"; };
+		871D53E420E10AF40039CB84 /* WMMMainListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMMMainListViewController.xib; sourceTree = "<group>"; };
+		871D53E720E10C430039CB84 /* WMMMainListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMMainListWireframe.swift; sourceTree = "<group>"; };
+		871D53E920E10CFE0039CB84 /* WMMMainListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMMainListInteractorProtocol.swift; sourceTree = "<group>"; };
+		871D53EC20E10D4B0039CB84 /* WMMMainListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMMainListInteractor.swift; sourceTree = "<group>"; };
+		871D53EE20E10DB50039CB84 /* WMMLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMLists.swift; sourceTree = "<group>"; };
+		871D53F020E10EC30039CB84 /* CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterable.swift; sourceTree = "<group>"; };
+		871D53F220E112FF0039CB84 /* WMMPaymentMethodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodListViewController.swift; sourceTree = "<group>"; };
+		871D53F320E112FF0039CB84 /* WMMPaymentMethodListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMMPaymentMethodListViewController.xib; sourceTree = "<group>"; };
+		871D53F620E118EF0039CB84 /* WMMPaymentMethodListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodListWireframe.swift; sourceTree = "<group>"; };
+		871D53F820E119A80039CB84 /* WMMPaymentMethodListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodListInteractorProtocol.swift; sourceTree = "<group>"; };
+		871D53FA20E119C90039CB84 /* WMMPaymentMethodListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodListInteractor.swift; sourceTree = "<group>"; };
 		872C2E77207626650049277E /* WheresMyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresMyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872C2E7A207626660049277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		872C2E82207626660049277E /* WheresMyMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheresMyMoney.xcdatamodel; sourceTree = "<group>"; };
@@ -71,6 +95,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		871D53E120E10A420039CB84 /* PaymentMethodList */ = {
+			isa = PBXGroup;
+			children = (
+				871D53F220E112FF0039CB84 /* WMMPaymentMethodListViewController.swift */,
+				871D53F320E112FF0039CB84 /* WMMPaymentMethodListViewController.xib */,
+				871D53F620E118EF0039CB84 /* WMMPaymentMethodListWireframe.swift */,
+				871D53F820E119A80039CB84 /* WMMPaymentMethodListInteractorProtocol.swift */,
+				871D53FA20E119C90039CB84 /* WMMPaymentMethodListInteractor.swift */,
+			);
+			path = PaymentMethodList;
+			sourceTree = "<group>";
+		};
+		871D53E220E10A550039CB84 /* MainList */ = {
+			isa = PBXGroup;
+			children = (
+				871D53E320E10AF40039CB84 /* WMMMainListViewController.swift */,
+				871D53E420E10AF40039CB84 /* WMMMainListViewController.xib */,
+				871D53E720E10C430039CB84 /* WMMMainListWireframe.swift */,
+				871D53E920E10CFE0039CB84 /* WMMMainListInteractorProtocol.swift */,
+				871D53EC20E10D4B0039CB84 /* WMMMainListInteractor.swift */,
+			);
+			path = MainList;
+			sourceTree = "<group>";
+		};
 		872C2E6E207626650049277E = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +217,7 @@
 		872C2E9A2076280B0049277E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				871D53EE20E10DB50039CB84 /* WMMLists.swift */,
 				872C2E9C207629FA0049277E /* WMMCurrencyDTO.swift */,
 				871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */,
 			);
@@ -198,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				872C2EAA207630A10049277E /* Numbers.swift */,
+				871D53F020E10EC30039CB84 /* CaseIterable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -205,7 +255,9 @@
 		872C2EB4207638080049277E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				871D53E220E10A550039CB84 /* MainList */,
 				872C2EB5207638190049277E /* CurrencyList */,
+				871D53E120E10A420039CB84 /* PaymentMethodList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -281,9 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871D53F520E112FF0039CB84 /* WMMPaymentMethodListViewController.xib in Resources */,
 				872C2E88207626660049277E /* LaunchScreen.storyboard in Resources */,
 				872C2E85207626660049277E /* Assets.xcassets in Resources */,
 				872C2EBB207638FD0049277E /* WMMCurrencyListViewController.xib in Resources */,
+				871D53E620E10AF40039CB84 /* WMMMainListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,21 +349,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				872C2EB1207635290049277E /* WMMRootWireframe.swift in Sources */,
+				871D53E820E10C430039CB84 /* WMMMainListWireframe.swift in Sources */,
+				871D53FB20E119C90039CB84 /* WMMPaymentMethodListInteractor.swift in Sources */,
 				872C2EAF207634610049277E /* WMMAppDependencies.swift in Sources */,
+				871D53ED20E10D4B0039CB84 /* WMMMainListInteractor.swift in Sources */,
+				871D53F720E118EF0039CB84 /* WMMPaymentMethodListWireframe.swift in Sources */,
 				872C2EA520762E2D0049277E /* WMMCurrencyDataManager.swift in Sources */,
+				871D53F120E10EC30039CB84 /* CaseIterable.swift in Sources */,
+				871D53F420E112FF0039CB84 /* WMMPaymentMethodListViewController.swift in Sources */,
 				872C2EAD2076341B0049277E /* Constants.swift in Sources */,
+				871D53EF20E10DB50039CB84 /* WMMLists.swift in Sources */,
 				872C2E83207626660049277E /* WheresMyMoney.xcdatamodeld in Sources */,
 				872C2EAB207630A10049277E /* Numbers.swift in Sources */,
 				872C2EBF207643D60049277E /* WMMCurrencyListInteractorProtocol.swift in Sources */,
 				872C2E98207627A30049277E /* NibLoadable.swift in Sources */,
 				872C2EA720762EDC0049277E /* WMMCoreDataStack.swift in Sources */,
 				872C2E9F20762A930049277E /* WMMCurrency.swift in Sources */,
+				871D53EA20E10CFE0039CB84 /* WMMMainListInteractorProtocol.swift in Sources */,
 				872C2E9D207629FA0049277E /* WMMCurrencyDTO.swift in Sources */,
 				872C2E96207627870049277E /* UIAlertController.swift in Sources */,
+				871D53E520E10AF40039CB84 /* WMMMainListViewController.swift in Sources */,
 				872C2E7B207626660049277E /* AppDelegate.swift in Sources */,
 				871D53DC20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift in Sources */,
 				871D53DE20E0FF980039CB84 /* WMMPaymentMethod.swift in Sources */,
 				871D53E020E1042D0039CB84 /* WMMDataManagerProtocol.swift in Sources */,
+				871D53F920E119A80039CB84 /* WMMPaymentMethodListInteractorProtocol.swift in Sources */,
 				872C2EA320762DF10049277E /* WMMDataManager.swift in Sources */,
 				872C2EBD20763BAA0049277E /* WMMCurrencyListInteractor.swift in Sources */,
 				872C2EB7207638460049277E /* WMMCurrencyListWireframe.swift in Sources */,

@@ -18,14 +18,17 @@ class WMMCurrencyListWireframe {
         self.currencyInteractor = interactor
     }
     
-    func presentCurrencyScreen() {
+    func presentCurrencyScreen(isRoot: Bool) {
         let currencyVC = self.currencyListViewController ?? WMMCurrencyListViewController.nibInstance
         currencyVC.currencyWireframe = self
         currencyVC.currencyInteractor = currencyInteractor
-        currencyVC.title = "Currency List"
+        currencyVC.title = "Currencies"
         
         self.currencyListViewController = currencyVC
-        self.rootWireframe?.showRootViewController(currencyVC)
+        if isRoot {
+            self.rootWireframe?.showRootViewController(currencyVC)
+        } else {
+            self.rootWireframe?.pushViewController(currencyVC)
+        }
     }
-    
 }
