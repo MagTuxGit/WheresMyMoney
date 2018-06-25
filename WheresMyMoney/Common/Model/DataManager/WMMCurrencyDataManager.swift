@@ -13,15 +13,13 @@ class WMMCurrencyDataManager: WMMDataManagerProtocol {
     
     func defaultCurrency(inContext context: NSManagedObjectContext? = nil) -> WMMCurrency {
         let context = context ?? mainContext
+        return self.getCurrency(code: "UAH", inContext: context) ?? self.createCurrency(WMMCurrencyDTO.uah, inContext: context)
+    }
 
-        let defaultCurrencyCode = "UAH"
-        
-        if let currency = self.getCurrency(code: defaultCurrencyCode, inContext: context) {
-            return currency
+    func createCurrencies(_ currencies: [WMMCurrencyDTO], inContext context: NSManagedObjectContext? = nil) {
+        for currency in currencies {
+            self.createCurrency(currency, inContext: context)
         }
-        
-        let uahCurrencyDTO = WMMCurrencyDTO(name: "Ukrainian Hryvnia", code: "UAH")
-        return self.createCurrency(uahCurrencyDTO, inContext: context)
     }
 
     @discardableResult
@@ -34,7 +32,9 @@ class WMMCurrencyDataManager: WMMDataManagerProtocol {
         currency.number = currencyDTO.number?.number
         currency.symbol = currencyDTO.symbol
         
-        saveMainContext()
+        do { try context.save() } catch {
+            print(error)
+        }
         
         return currency
     }
@@ -50,6 +50,29 @@ class WMMCurrencyDataManager: WMMDataManagerProtocol {
         } catch let error as NSError {
             printFetchError(error)
             return nil
+        }
+    }
+
+    func getCurrencyList(inContext context: NSManagedObjectContext? = nil) -> [WMMCurrency] {
+        let context = context ?? mainContext
+        
+        let fetchRequest: NSFetchRequest<WMMCurrency> = WMMCurrency.fetchRequest()
+        do {
+            return try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            printFetchError(error)
+            return []
+        }
+    }
+}
+
+extension WMMCurrencyDTO {
+    
+    var currency: WMMCurrency? {
+        get {
+            guard let currencyCode = self.code else { return nil }
+            let currencyDataManager = WMMDataManager.shared.currency
+            return currencyDataManager.getCurrency(code: currencyCode) ?? currencyDataManager.createCurrency(self)
         }
     }
 }

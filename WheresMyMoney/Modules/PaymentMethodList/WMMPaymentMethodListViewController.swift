@@ -24,6 +24,12 @@ class WMMPaymentMethodListViewController: UIViewController, NibLoadable {
         self.tableView.alwaysBounceVertical = false
         
         // register cells
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonDidTouch))
+    }
+    
+    @objc func addButtonDidTouch() {
+        //TODO: present payment method edit VC
     }
 }
 
@@ -46,4 +52,8 @@ extension WMMPaymentMethodListViewController: UITableViewDataSource {
         return cell
     }
     
+}
+
+extension WMMPaymentMethodListViewController: UITableViewDelegate {
+    //TODO: edit, delete (check refs), selection
 }

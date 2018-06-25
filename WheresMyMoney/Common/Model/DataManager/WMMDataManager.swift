@@ -26,4 +26,5 @@ class WMMDataManager {
     }
     
     lazy var currency = { return WMMCurrencyDataManager() }()
+    lazy var paymentMethod = { return WMMPaymentMethodDataManager() }()
 }

@@ -10,16 +10,13 @@ import Foundation
 
 class WMMCurrencyListInteractor: WMMCurrencyListInteractorProtocol {
     
-    private var currencyDataManager = WMMDataManager.shared.currency
-    
-    // Fake data for testing
     private var dataSource: [WMMCurrencyDTO] = {
-        var currencies = [WMMCurrencyDTO]()
-        currencies.append(WMMCurrencyDTO.usd)
-        currencies.append(WMMCurrencyDTO.eur)
-        currencies.append(WMMCurrencyDTO.gbp)
-        currencies.append(WMMCurrencyDTO.uah)
-        currencies.append(WMMCurrencyDTO.rub)
+        var currencyDataManager = WMMDataManager.shared.currency
+        var currencies = currencyDataManager.getCurrencyList().map { $0.currencyDTO }
+        if currencies.isEmpty {
+            currencies = defaultDataSource
+            currencyDataManager.createCurrencies(currencies)
+        }
         return currencies
     }()
     
@@ -33,5 +30,20 @@ class WMMCurrencyListInteractor: WMMCurrencyListInteractorProtocol {
     
     func subtitleForIndexPath(_ indexPath: IndexPath) -> String {
         return dataSource[indexPath.row].code ?? ""
+    }
+}
+
+extension WMMCurrencyListInteractor {
+
+    static var defaultDataSource: [WMMCurrencyDTO] {
+        get {
+            var currencies = [WMMCurrencyDTO]()
+            currencies.append(WMMCurrencyDTO.usd)
+            currencies.append(WMMCurrencyDTO.eur)
+            currencies.append(WMMCurrencyDTO.gbp)
+            currencies.append(WMMCurrencyDTO.uah)
+            currencies.append(WMMCurrencyDTO.rub)
+            return currencies
+        }
     }
 }

@@ -24,6 +24,12 @@ class WMMCurrencyListViewController: UIViewController, NibLoadable {
         self.tableView.alwaysBounceVertical = false
 
         // register cells
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonDidTouch))
+    }
+    
+    @objc func addButtonDidTouch() {
+        //TODO: present currency edit VC
     }
 }
 
@@ -46,4 +52,8 @@ extension WMMCurrencyListViewController: UITableViewDataSource {
         return cell
     }
     
+}
+
+extension WMMCurrencyListViewController: UITableViewDelegate {
+    //TODO: edit, delete (check refs), selection
 }

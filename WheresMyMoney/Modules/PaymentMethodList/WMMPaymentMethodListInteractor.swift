@@ -10,12 +10,9 @@ import Foundation
 
 class WMMPaymentMethodListInteractor: WMMPaymentMethodListInteractorProtocol {
     
-    // Fake data for testing
     private var dataSource: [WMMPaymentMethodDTO] = {
-        var paymentMethods = [WMMPaymentMethodDTO]()
-        paymentMethods.append(WMMPaymentMethodDTO(name: "Cash", currency: WMMCurrencyDTO.uah))
-        paymentMethods.append(WMMPaymentMethodDTO(name: "Card Privat", currency: WMMCurrencyDTO.uah))
-        paymentMethods.append(WMMPaymentMethodDTO(name: "Account USD", currency: WMMCurrencyDTO.usd))
+        var paymentMethodDataManager = WMMDataManager.shared.paymentMethod
+        var paymentMethods = paymentMethodDataManager.getPaymentMethodList().map { $0.paymentMethodDTO }
         return paymentMethods
     }()
     
@@ -29,5 +26,18 @@ class WMMPaymentMethodListInteractor: WMMPaymentMethodListInteractorProtocol {
     
     func subtitleForIndexPath(_ indexPath: IndexPath) -> String {
         return dataSource[indexPath.row].currency.code ?? "N/A"
+    }
+}
+
+extension WMMPaymentMethodListInteractor {
+    
+    static var defaultDataSource: [WMMPaymentMethodDTO] {
+        get {
+            var paymentMethods = [WMMPaymentMethodDTO]()
+            paymentMethods.append(WMMPaymentMethodDTO(name: "Cash", currency: WMMCurrencyDTO.uah))
+            paymentMethods.append(WMMPaymentMethodDTO(name: "Card Privat", currency: WMMCurrencyDTO.uah))
+            paymentMethods.append(WMMPaymentMethodDTO(name: "Account USD", currency: WMMCurrencyDTO.usd))
+            return paymentMethods
+        }
     }
 }
