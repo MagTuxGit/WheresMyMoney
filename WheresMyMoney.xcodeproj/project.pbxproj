@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871D53DC20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */; };
+		871D53DE20E0FF980039CB84 /* WMMPaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DD20E0FF980039CB84 /* WMMPaymentMethod.swift */; };
+		871D53E020E1042D0039CB84 /* WMMDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D53DF20E1042D0039CB84 /* WMMDataManagerProtocol.swift */; };
 		872C2E7B207626660049277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E7A207626660049277E /* AppDelegate.swift */; };
 		872C2E83207626660049277E /* WheresMyMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */; };
 		872C2E85207626660049277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872C2E84207626660049277E /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethodDTO.swift; sourceTree = "<group>"; };
+		871D53DD20E0FF980039CB84 /* WMMPaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMPaymentMethod.swift; sourceTree = "<group>"; };
+		871D53DF20E1042D0039CB84 /* WMMDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMMDataManagerProtocol.swift; sourceTree = "<group>"; };
 		872C2E77207626650049277E /* WheresMyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresMyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872C2E7A207626660049277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		872C2E82207626660049277E /* WheresMyMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheresMyMoney.xcdatamodel; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				872C2EA620762EDC0049277E /* WMMCoreDataStack.swift */,
 				872C2E81207626660049277E /* WheresMyMoney.xcdatamodeld */,
 				872C2E9E20762A930049277E /* WMMCurrency.swift */,
+				871D53DD20E0FF980039CB84 /* WMMPaymentMethod.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				872C2E9C207629FA0049277E /* WMMCurrencyDTO.swift */,
+				871D53DB20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				872C2EA220762DF10049277E /* WMMDataManager.swift */,
+				871D53DF20E1042D0039CB84 /* WMMDataManagerProtocol.swift */,
 				872C2EA420762E2D0049277E /* WMMCurrencyDataManager.swift */,
 			);
 			path = DataManager;
@@ -298,6 +307,9 @@
 				872C2E9D207629FA0049277E /* WMMCurrencyDTO.swift in Sources */,
 				872C2E96207627870049277E /* UIAlertController.swift in Sources */,
 				872C2E7B207626660049277E /* AppDelegate.swift in Sources */,
+				871D53DC20E0FF0E0039CB84 /* WMMPaymentMethodDTO.swift in Sources */,
+				871D53DE20E0FF980039CB84 /* WMMPaymentMethod.swift in Sources */,
+				871D53E020E1042D0039CB84 /* WMMDataManagerProtocol.swift in Sources */,
 				872C2EA320762DF10049277E /* WMMDataManager.swift in Sources */,
 				872C2EBD20763BAA0049277E /* WMMCurrencyListInteractor.swift in Sources */,
 				872C2EB7207638460049277E /* WMMCurrencyListWireframe.swift in Sources */,

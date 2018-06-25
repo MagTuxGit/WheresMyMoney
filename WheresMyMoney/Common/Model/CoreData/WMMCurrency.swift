@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 
 extension WMMCurrency {
+    
     var currencyDTO: WMMCurrencyDTO {
         get {
             return WMMCurrencyDTO(name: self.name ?? "", code: self.code, symbol: self.symbol, number: self.number?.intValue)

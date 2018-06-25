@@ -15,7 +15,7 @@ class WMMDataManager {
     
     let coreDataStack = WMMCoreDataStack()
     
-    var context: NSManagedObjectContext {
+    var mainContext: NSManagedObjectContext {
         get {
             return self.coreDataStack.context
         }

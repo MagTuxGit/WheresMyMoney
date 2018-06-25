@@ -5,8 +5,14 @@
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="paymentMethods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WMMPaymentMethod" inverseName="currency" inverseEntity="WMMPaymentMethod" syncable="YES"/>
+    </entity>
+    <entity name="WMMPaymentMethod" representedClassName="WMMPaymentMethod" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="currency" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WMMCurrency" inverseName="paymentMethods" inverseEntity="WMMCurrency" syncable="YES"/>
     </entity>
     <elements>
-        <element name="WMMCurrency" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="WMMCurrency" positionX="-54" positionY="-9" width="128" height="120"/>
+        <element name="WMMPaymentMethod" positionX="-54" positionY="18" width="128" height="75"/>
     </elements>
 </model>
